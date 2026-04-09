@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch문 04</title>
+  </head>
+  <body>
+    <button onclick="handleClick('login')">로그인</button>
+    <button onclick="handleClick('join')">회원가입</button>
+    <button onclick="handleClick('logout')">로그아웃</button>
+    <script>
+      // handleClick() - 함수명 (매개변수 - type ↓)
+      function handleClick(type) {
+        console.log(type);
+        switch (type) {
+          case "login":
+            console.log("로그인 완료");
+            break;
+
+          case "join":
+            console.log("회원가입 완료");
+            break;
+
+          case "logout":
+            console.log("로그아웃 완료");
+            break;
+
+          default:
+            console.log("잘못된 요청");
+        }
+      }
+    </script>
+  </body>
+</html>
